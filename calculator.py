@@ -14,8 +14,15 @@ while True:
         break
 
     else:
-        if t_input[0] == "+":
+        opp = t_input[0]
+        if opp == "+":
             print add(int(t_input[1]), int(t_input[2]))
+        elif opp == "-":
+            print subtract(int(t_input[1]), int(t_input[2]))
+        elif opp == "*":
+            print multiply(int(t_input[1]), int(t_input[2]))
+
+
 
 
 # Your code goes here
