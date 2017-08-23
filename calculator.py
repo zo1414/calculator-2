@@ -21,6 +21,9 @@ while True:
             print subtract(int(t_input[1]), int(t_input[2]))
         elif opp == "*":
             print multiply(int(t_input[1]), int(t_input[2]))
+        elif opp == "/":
+            print divide(int(t_input[1]), int(t_input[2]))
+
 
 
 
