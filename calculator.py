@@ -4,7 +4,7 @@ Using the arithmetic.py file from Calculator Part 1, create the
 calculator program yourself in this file.
 """
 
-from arithmetic import *
+from arithmetic1 import *
 
 
 def find_opp(opp):
