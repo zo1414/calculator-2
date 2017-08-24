@@ -7,7 +7,7 @@ def add(num_list):
     sum = 0
 
     for i in num_list:
-        sum = sum + i
+        sum = sum + float(i)
 
     return int(sum)
 
@@ -18,7 +18,7 @@ def subtract(num_list):
     diff = 0
 
     for i in num_list:
-        diff = diff - i
+        diff = diff - float(i)
 
     return int(diff)
 
@@ -29,7 +29,7 @@ def multiply(num_list):
     pro = 1
 
     for i in num_list:
-        pro = pro * i
+        pro = pro * float(i)
 
     return int(pro)
 
@@ -40,7 +40,7 @@ def divide(num_list):
     quo = num_list[0]
 
     for i in num_list[1:]:
-        quo = quo / i
+        quo = quo / float(i)
     return quo
 
 
@@ -50,7 +50,7 @@ def square(num_list):
     squ_list = []
 
     for i in num_list:
-        squ_list.append(i ** 2)
+        squ_list.append(float(i) ** 2)
     return squ_list
 
 
@@ -60,7 +60,7 @@ def cube(num_list):
     cube_list = []
 
     for i in num_list:
-        cube_list.append(i ** 3)
+        cube_list.append(float(i) ** 3)
 
     return cube_list
 
@@ -71,7 +71,7 @@ def power(num_list):
     raised = num_list[0]
 
     for i in num_list[1:]:
-        raised = raised ** i
+        raised = raised ** float(i)
 
     return raised
 
@@ -82,7 +82,7 @@ def mod(num_list):
     rem = num_list[0]
 
     for i in num_list[1:]:
-        rem = rem % i
+        rem = rem % float(i)
 
     return rem
 
