@@ -12,46 +12,79 @@ def add(num_list):
     return int(sum)
 
 
-def subtract(num1, num2):
-    """Return the second number subtracted from the first."""
+def subtract(num_list):
+    """Return the difference of a list of integers"""
 
-    return int(num1 - num2)
+    diff = 0
+
+    for i in num_list:
+        diff = diff - i
+
+    return int(diff)
 
 
-def multiply(num1, num2):
-    """Multiply the two inputs together."""
+def multiply(num_list):
+    """Return the product of a list of integers"""
 
-    return int(num1 * num2)
+    pro = 1
+
+    for i in num_list:
+        pro = pro * i
+
+    return int(pro)
 
 
-def divide(num1, num2):
+def divide(num_list):
     """Divide the first input by the second, returning a floating point."""
 
-    return float(num1) / num2
+    quo = num_list[0]
+
+    for i in num_list[1:]:
+        quo = quo / i
+    return quo
 
 
-def square(num1):
-    """Return the square of the input."""
+def square(num_list):
+    """Return a list of squares from a list."""
 
-    return int(num1 ** 2)
+    squ_list = []
 
-
-def cube(num1):
-    """Return the cube of the input."""
-
-    return int(num1 ** 3)
+    for i in num_list:
+        squ_list.append(i ** 2)
+    return squ_list
 
 
-def power(num1, num2):
-    """Raise num1 to the power of num2 and return the value."""
+def cube(num_list):
+    """Return a list of cubes of a list."""
 
-    return int(num1 ** num2)
+    cube_list = []
+
+    for i in num_list:
+        cube_list.append(i ** 3)
+
+    return cube_list
 
 
-def mod(num1, num2):
-    """Return the remainder of num1 / num2."""
+def power(num_list):
+    """Takes a list of numbers and sequentially raises each to the power of the next"""
 
-    return int(num1 % num2)
+    raised = num_list[0]
+
+    for i in num_list[1:]:
+        raised = raised ** i
+
+    return raised
+
+
+def mod(num_list):
+    """Takes a list and sequentially modulates."""
+
+    rem = num_list[0]
+
+    for i in num_list[1:]:
+        rem = rem % i
+
+    return rem
 
 
 def add_mult(num1, num2, num3):
